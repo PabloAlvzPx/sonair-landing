@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SONAIR ONE — Own the quiet. Keep the world close.</title>
+  <meta name="description" content="SONAIR ONE: auriculares over-ear premium con cancelación adaptativa, llamadas nítidas y comodidad para todo el día. 349 €.">
+  <meta name="theme-color" content="#080A0F">
+  <link rel="icon" href="assets/sonair_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="SONAIR, volver al inicio">
+        <svg class="nav__logo" viewBox="78 100 700 160" aria-hidden="true" focusable="false">
+          <circle cx="158" cy="180" r="72" fill="none" stroke="#F4F4F5" stroke-width="7"/>
+          <path d="M120 190 C130 132 170 119 207 160 C230 187 210 226 167 232 C134 236 112 218 120 190Z" fill="none" stroke="#8B5CF6" stroke-width="12"/>
+          <text x="275" y="213" font-family="Inter,-apple-system,Segoe UI,Arial,sans-serif" font-size="92" letter-spacing="22" fill="#F9FAFB">SONAIR</text>
+        </svg>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Secciones">
+        <a href="#silencio" data-navlink>Silencio</a>
+        <a href="#sonido" data-navlink>Sonido</a>
+        <a href="#jornada" data-navlink>Jornada</a>
+        <a href="#specs" data-navlink>Especificaciones</a>
+        <a href="#faq" data-navlink>FAQ</a>
+        <a href="#comprar" class="nav__mobile-buy">Comprar · 349 €</a>
+      </nav>
+
+      <a href="#comprar" class="btn btn--primary btn--sm nav__buy">Comprar <span class="nav__price">· 349 €</span></a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero__media">
+        <img src="assets/producto_01_hero.jpg" width="1600" height="900"
+             alt="Auriculares SONAIR ONE en acabado Graphite Black, vista frontal sobre fondo oscuro"
+             fetchpriority="high">
+      </figure>
+
+      <div class="hero__copy wrap">
+        <p class="eyebrow">SONAIR ONE · Auricular over-ear</p>
+        <h1 id="hero-title" class="hero__title">Own the quiet.<br><span>Keep the world close.</span></h1>
+        <p class="hero__sub">Auriculares premium con cancelación adaptativa, llamadas nítidas y comodidad para todo el día. Diseñados para trabajar, viajar y volver al mundo sin fricción.</p>
+        <div class="hero__ctas">
+          <a href="#silencio" class="btn btn--primary">Descubrir SONAir ONE</a>
+          <a href="#specs" class="btn btn--ghost">Ver especificaciones <span aria-hidden="true" class="btn__arrow">→</span></a>
+        </div>
+        <dl class="hero__facts">
+          <div><dt>Autonomía con ANC</dt><dd>32 h</dd></div>
+          <div><dt>Peso</dt><dd>286 g</dd></div>
+          <div><dt>Precio</dt><dd>349 €</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ADAPTIVE SILENCE ============ -->
+    <section class="section silence" id="silencio" aria-labelledby="silence-title">
+      <div class="wrap">
+        <header class="split-head" data-reveal>
+          <p class="eyebrow">01 — Cancelación</p>
+          <h2 id="silence-title" class="h2">Adaptive Silence</h2>
+          <p class="lead">No todos los silencios son iguales. SONAir ONE ajusta la cancelación en tiempo real según tu entorno y te permite volver al exterior con un toque.</p>
+        </header>
+
+        <div class="silence__stage" data-reveal>
+          <figure class="silence__media">
+            <img src="assets/producto_03_lifestyle.jpg" width="1600" height="900" loading="lazy"
+                 alt="SONAIR ONE iluminado por un haz de luz en un espacio oscuro">
+            <button class="touchpoint" type="button" data-touch aria-pressed="false"
+                    aria-label="Tocar el auricular: alternar Transparency Mode">
+              <span class="touchpoint__ring" aria-hidden="true"></span>
+            </button>
+            <figcaption class="silence__hint" data-touch-hint>Toca el auricular para volver al entorno</figcaption>
+          </figure>
+
+          <div class="console" aria-label="Simulador de cancelación">
+            <div class="console__group">
+              <p class="console__label" id="mode-label">Modo</p>
+              <div class="segmented" role="radiogroup" aria-labelledby="mode-label" data-modes>
+                <button type="button" role="radio" aria-checked="true"  data-mode="auto">Automático</button>
+                <button type="button" role="radio" aria-checked="false" data-mode="strong">Fuerte</button>
+                <button type="button" role="radio" aria-checked="false" data-mode="soft">Suave</button>
+                <button type="button" role="radio" aria-checked="false" data-mode="transparency">Transparencia</button>
+              </div>
+            </div>
+
+            <div class="console__group">
+              <p class="console__label" id="env-label">Entorno</p>
+              <div class="chips" role="radiogroup" aria-labelledby="env-label" data-envs>
+                <button type="button" role="radio" aria-checked="false" data-env="office">Oficina</button>
+                <button type="button" role="radio" aria-checked="true"  data-env="cowork">Coworking</button>
+                <button type="button" role="radio" aria-checked="false" data-env="train">Tren</button>
+                <button type="button" role="radio" aria-checked="false" data-env="flight">Vuelo</button>
+              </div>
+            </div>
+
+            <div class="scope">
+              <canvas class="scope__canvas" data-scope aria-hidden="true"></canvas>
+              <div class="scope__legend" aria-hidden="true">
+                <span class="scope__key scope__key--world">Entorno</span>
+                <span class="scope__key scope__key--ear">Lo que llega a tus oídos</span>
+              </div>
+            </div>
+
+            <p class="console__readout" aria-live="polite" data-readout></p>
+            <p class="console__note">Simulación ilustrativa del comportamiento de cada modo.</p>
+          </div>
+        </div>
+
+        <ul class="features" data-reveal>
+          <li><span class="features__k">Adaptive ANC</span><span>Automático, fuerte y suave.</span></li>
+          <li><span class="features__k">Transparency Mode</span><span>Con detección de voz.</span></li>
+          <li><span class="features__k">Sellado pasivo</span><span>Con espuma viscoelástica.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOUND / CRAFT ============ -->
+    <section class="section sound" id="sonido" aria-labelledby="sound-title">
+      <figure class="sound__media" data-reveal>
+        <img src="assets/producto_02_detalle.jpg" width="1600" height="900" loading="lazy"
+             alt="Detalle de construcción de SONAIR ONE: diadema, bisagra y copas">
+      </figure>
+      <div class="wrap sound__body">
+        <header data-reveal>
+          <p class="eyebrow">02 — Sonido y construcción</p>
+          <h2 id="sound-title" class="h2">Sound built for long days</h2>
+        </header>
+        <div data-reveal>
+          <p class="lead">Drivers de grafeno de 52 mm, perfil equilibrado y baja fatiga auditiva para jornadas de trabajo, música y viajes largos.</p>
+          <ul class="ticks">
+            <li>USB-C audio sin compresión.</li>
+            <li>EQ personalizable.</li>
+            <li>Audio espacial opcional.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DAY: CALLS / BATTERY / COMFORT ============ -->
+    <section class="section day" id="jornada" aria-labelledby="day-title">
+      <div class="wrap">
+        <header class="split-head" data-reveal>
+          <p class="eyebrow">03 — Una jornada completa</p>
+          <h2 id="day-title" class="h2">De la primera llamada al último vuelo.</h2>
+        </header>
+
+        <article class="row" data-reveal>
+          <p class="row__figure">6<small>micrófonos</small></p>
+          <div class="row__text">
+            <h3 class="h3">Calls that do not sound remote</h3>
+            <p>Micrófonos beamforming y reducción de ruido de fondo para videollamadas claras incluso en espacios compartidos.</p>
+          </div>
+        </article>
+
+        <article class="row row--battery" data-reveal>
+          <p class="row__figure"><span data-battery-figure>32</span><small>horas</small></p>
+          <div class="row__text">
+            <h3 class="h3">Battery</h3>
+            <p>32 horas con ANC. Hasta 46 horas sin ANC. Diez minutos de carga ofrecen hasta cinco horas de reproducción.</p>
+
+            <form class="calc" data-calc onsubmit="return false">
+              <div class="calc__top">
+                <label for="hours" class="calc__label">Horas de escucha al día</label>
+                <output for="hours" class="calc__hours" data-hours-out>8 h</output>
+              </div>
+              <input id="hours" type="range" min="2" max="12" step="1" value="8" data-hours>
+              <div class="calc__switch" role="radiogroup" aria-label="Cancelación activa">
+                <button type="button" role="radio" aria-checked="true" data-anc="on">Con ANC</button>
+                <button type="button" role="radio" aria-checked="false" data-anc="off">Sin ANC</button>
+              </div>
+              <p class="calc__result" aria-live="polite" data-calc-result></p>
+            </form>
+          </div>
+        </article>
+
+        <article class="row" data-reveal>
+          <p class="row__figure">286<small>gramos</small></p>
+          <div class="row__text">
+            <h3 class="h3">Comfort</h3>
+            <p>286 gramos, diadema de presión moderada y almohadillas reemplazables. Diseñados para desaparecer durante una jornada completa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SPECS ============ -->
+    <section class="section specs" id="specs" aria-labelledby="specs-title">
+      <div class="wrap specs__grid">
+        <div data-reveal>
+          <p class="eyebrow">04 — Especificaciones</p>
+          <h2 id="specs-title" class="h2">Ficha técnica</h2>
+          <dl class="spec-table">
+            <div><dt>Modelo</dt><dd>SONAIR ONE</dd></div>
+            <div><dt>Tipo</dt><dd>Over-ear cerrado</dd></div>
+            <div><dt>Drivers</dt><dd>52 mm graphene composite</dd></div>
+            <div><dt>ANC</dt><dd>Adaptive ANC · 3 niveles</dd></div>
+            <div><dt>Transparency</dt><dd>Sí, con voice detect</dd></div>
+            <div><dt>Bluetooth</dt><dd>5.4 multipoint</dd></div>
+            <div><dt>Codecs</dt><dd>AAC · SBC · LC3</dd></div>
+            <div><dt>USB audio</dt><dd>Sí</dd></div>
+            <div><dt>Entrada 3,5 mm</dt><dd>Sí</dd></div>
+            <div><dt>Autonomía con ANC</dt><dd>32 h</dd></div>
+            <div><dt>Autonomía sin ANC</dt><dd>46 h</dd></div>
+            <div><dt>Carga rápida</dt><dd>10 min → hasta 5 h</dd></div>
+            <div><dt>Peso</dt><dd>286 g</dd></div>
+            <div><dt>Micrófonos</dt><dd>6 micrófonos beamforming</dd></div>
+            <div><dt>Color</dt><dd>Graphite Black</dd></div>
+            <div><dt>PVP</dt><dd>349 €</dd></div>
+          </dl>
+        </div>
+
+        <aside class="box" data-reveal aria-labelledby="box-title">
+          <figure class="box__media">
+            <img src="assets/producto_04_packaging.jpg" width="1600" height="900" loading="lazy"
+                 alt="Caja de SONAIR ONE junto a los auriculares">
+          </figure>
+          <h3 id="box-title" class="h3">En la caja</h3>
+          <ul class="ticks">
+            <li>Auriculares SONAIR ONE</li>
+            <li>Funda rígida</li>
+            <li>Cable USB-C</li>
+            <li>Cable 3,5 mm</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ OFFER / FINAL CTA ============ -->
+    <section class="section offer" id="comprar" aria-labelledby="offer-title">
+      <div class="wrap offer__inner" data-reveal>
+        <h2 id="offer-title" class="offer__title">Make room for better focus.</h2>
+        <p class="offer__price"><span>349 €</span></p>
+        <ul class="offer__terms">
+          <li>Funda rígida incluida</li>
+          <li>30 días de prueba</li>
+          <li>2 años de garantía</li>
+        </ul>
+        <button type="button" class="btn btn--primary btn--lg" data-buy>Comprar SONAir ONE</button>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <header data-reveal>
+          <p class="eyebrow">05 — Preguntas</p>
+          <h2 id="faq-title" class="h2">Preguntas frecuentes</h2>
+        </header>
+        <div class="faq__list" data-reveal>
+          <details>
+            <summary>¿Funciona con Windows, macOS, iPhone y Android?</summary>
+            <div class="faq__a"><p>Sí. Bluetooth multipoint y audio USB-C.</p></div>
+          </details>
+          <details>
+            <summary>¿Puedo sustituir las almohadillas?</summary>
+            <div class="faq__a"><p>Sí, están diseñadas para reemplazo sin herramientas.</p></div>
+          </details>
+          <details>
+            <summary>¿La cancelación funciona sin música?</summary>
+            <div class="faq__a"><p>Sí.</p></div>
+          </details>
+          <details>
+            <summary>¿Incluye cable analógico?</summary>
+            <div class="faq__a"><p>Sí, cable USB-C y cable 3,5 mm.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img class="footer__logo" src="assets/sonair_logo.svg" width="1200" height="360" alt="SONAIR — Silence that moves with you" loading="lazy">
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#silencio">Silencio</a>
+        <a href="#sonido">Sonido</a>
+        <a href="#jornada">Jornada</a>
+        <a href="#specs">Especificaciones</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <p class="footer__legal">© 2026 SONAIR. Página de demostración con producto ficticio.</p>
+    </div>
+  </footer>
+
+  <!-- Barra de compra móvil -->
+  <div class="buybar" data-buybar aria-hidden="true">
+    <div class="buybar__info"><strong>SONAIR ONE</strong><span>349 €</span></div>
+    <a href="#comprar" class="btn btn--primary btn--sm" tabindex="-1">Comprar</a>
+  </div>
+
+  <!-- Resumen de compra -->
+  <dialog class="order" data-order aria-labelledby="order-title">
+    <form method="dialog" class="order__inner">
+      <button class="order__close" value="close" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Resumen</p>
+      <h2 id="order-title" class="h3">SONAIR ONE</h2>
+      <div class="order__media">
+        <img src="assets/producto_01_hero.jpg" width="1600" height="900" alt="" loading="lazy">
+      </div>
+      <dl class="order__lines">
+        <div><dt>Color</dt><dd>Graphite Black</dd></div>
+        <div><dt>Incluye</dt><dd>Funda rígida · cable USB-C · cable 3,5 mm</dd></div>
+        <div><dt>Prueba</dt><dd>30 días</dd></div>
+        <div><dt>Garantía</dt><dd>2 años</dd></div>
+        <div class="order__total"><dt>Total</dt><dd>349 €</dd></div>
+      </dl>
+      <button type="button" class="btn btn--primary btn--block" data-checkout>Continuar al pago</button>
+      <p class="order__status" role="status" data-order-status></p>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

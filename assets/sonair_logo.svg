@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<rect width="1200" height="360" rx="42" fill="#080A0F"/>
+<circle cx="158" cy="180" r="72" fill="none" stroke="#F4F4F5" stroke-width="5"/>
+<path d="M120 190 C130 132 170 119 207 160 C230 187 210 226 167 232 C134 236 112 218 120 190Z" fill="none" stroke="#8B5CF6" stroke-width="10"/>
+<text x="275" y="203" font-family="Inter,Arial" font-size="92" letter-spacing="22" fill="#F9FAFB">SONAIR</text>
+<text x="280" y="260" font-family="Inter,Arial" font-size="24" letter-spacing="9" fill="#9CA3AF">SILENCE THAT MOVES WITH YOU</text>
+</svg>
